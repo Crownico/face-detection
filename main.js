@@ -77,7 +77,7 @@ function detectFace(action = "face") {
     // console.log(' ', detections)
     const resizedDetections = faceapi.resizeResults(detections, { width: clientWidth, height: clientHeight }); // 绘制结果
 
-    ctx.clearRect(0, 0, clientWidth, clientHeight); // 清除每一次检测的 canvas
+    ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight); // 清除每一次检测的 canvas
 
     mapActions[action](canvas, resizedDetections);
 

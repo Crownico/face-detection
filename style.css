@@ -14,14 +14,15 @@ body {
 }
 .view {
   position: relative;
+  padding-top: 5px;
 }
 .view video {
   max-width: 640px;
   width: 100vw;
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
   #app {
     justify-content: flex-start;
   }
-}
+} */
