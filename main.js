@@ -38,7 +38,7 @@ const view = document.querySelector(".view");
 // 开启摄像头
 async function getCamera() {
   try {
-    const mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
+    const mediaStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" }});
     videoEl.srcObject = mediaStream;
   } catch (error) {
     console.error(error);

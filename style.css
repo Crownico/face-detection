@@ -1,11 +1,27 @@
 body {
+  padding: 0;
+  margin: 0;
   height: 100vh;
+}
+#app {
+  height: 100vh;
+  width: 100%;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   background-color: #242424;
 }
-
 .view {
   position: relative;
+}
+.view video {
+  max-width: 640px;
+  width: 100vw;
+}
+
+@media screen and (max-width: 640px) {
+  #app {
+    justify-content: flex-start;
+  }
 }
