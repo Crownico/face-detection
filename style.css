@@ -6,6 +6,6 @@ body {
   background-color: #242424;
 }
 
-#app {
+.view {
   position: relative;
 }
